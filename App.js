@@ -5,6 +5,7 @@ import {AppLoading} from "expo";
 import {Asset} from "expo-asset";
 import * as Font from 'expo-font'
 import {Ionicons} from "@expo/vector-icons";
+import Home from "./screens/Home";
 
 const cacheImages = images =>
     images.map(image => {
@@ -33,9 +34,10 @@ export default function App() {
   const onFinish = () => setIsReady(true)
   return (
       isReady ? (
-          <View>
-            <Text>WELCOME!</Text>
-          </View>
+          // <View>
+          //   <Text>WELCOME!</Text>
+          // </View>
+          <Home/>
 
       ) : (
           <AppLoading
